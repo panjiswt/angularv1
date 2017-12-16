@@ -1,0 +1,128 @@
+<!doctype html>
+<html class="no-js" ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <title>Customer Complaint Management</title>
+    <meta name="description" content="Angular admin dashboard with material design">
+    <meta name="author" content="flatlogic.com">
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="apf2.png" />
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+    <link rel="stylesheet" type="text/css" href="fonts/icon.css">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+    <!-- build:css({.tmp/serve,src}) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="bower_components/angular-material/material-dashboard.css" />
+    <!-- <link rel="stylesheet" href="bower_components/angular-material/demo.css" /> -->
+    <link rel="stylesheet" href="bower_components/nvd3/build/nv.d3.css" />
+    <link rel="stylesheet" href="bower_components/angular-material/angular-material.css" />
+    <!-- <link rel="stylesheet" href="bower_components/angular-material/prettify.min.css" /> -->
+    <link rel="stylesheet" href="bower_components/angular-material-data-table/dist/md-data-table.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css({.tmp/serve,src}) styles/app.css -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="app/index.css">
+    
+    <!-- endinject -->
+    <!-- endbuild -->
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+      <p>You are using an <strong>outdated</strong> browser. Please
+        <a href="http://browsehappy.com/">upgrade your browser</a>
+        to improve your experience.</p>
+    <![endif]-->
+
+    <div ui-view layout="row" layout-fill ></div>
+    <!-- build:js(src) scripts/vendor.js -->
+    <!-- bower:js -->
+    
+
+
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/angular-cache/angular-cache.js"></script>
+    <script src="bower_components/d3/d3.js"></script>
+    <script src="bower_components/nvd3/build/nv.d3.js"></script>
+    <script src="bower_components/angular-nvd3/dist/angular-nvd3.js"></script>
+    <script src="bower_components/angular-aria/angular-aria.js"></script>
+    <script src="bower_components/angular-messages/angular-messages.js"></script>
+    <script src="bower_components/angular-material/angular-material.js"></script>
+      <!-- <script src="https://static.formhero.io/formhero/js/material/v1.1.1-fh-build/angular-material.min.js"></script> -->
+    <!-- <script src="bower_components/angular-material/lf-ng-md-file-input.min.js"></script> -->
+    <!-- <script src="bower_components/angular-material/run_prettify.js"></script> -->
+    <script src="bower_components/angular-mocks/angular-mocks.js"></script>
+    <script src="bower_components/angular-material-data-table/dist/md-data-table.js"></script>
+<!-- <script type="text/javascript" src="ui-bootstrap-tpls.js"></script>     -->
+
+    <script src="bower_components/moment-with-locales.js"></script>    
+    <script src="bower_components/angular-moment-picker.js"></script>
+    <link   href="bower_components/angular-moment-picker.css" rel="stylesheet">
+    <!-- endbower -->
+    <!-- endbuild -->
+    <script src="bower_components/ag-gridv54.js"></script>
+<script src="bower_components/FileSaver.js"></script>
+<!-- <script src="bower_components/jquery/dist/jquery.js"></script> 
+<script type="text/javascript" src="bower_components/html2canvas.min.js"></script>
+<script type="text/javascript" src="bower_components/jspdf.debug.js"></script>
+<script type="text/javascript" src="bower_components/saveHtmlToPdf.min.js"></script>
+    <script src="bower_components/htmlpdf/jquery.min.js"></script>
+    <script src="script/jquery.plugin.html2canvas.js"></script>-->
+
+    <script src="bower_components/htmlpdf/html2canvas.js"></script>    
+    <script src="bower_components/htmlpdf/jspdf.mychanges.js"></script>
+    <script src="bower_components/htmlpdf/jspdf.min.js"></script>
+    <script src="bower_components/htmlpdf/canvas-toBlob.js"></script> 
+
+    <script src="app/app.js"></script>
+    <script src="app/config.js"></script>
+    <script src="app/factory.js"></script>
+    <!-- endinjectapp -->
+
+    <!-- inject controller -->
+    <script src="app/controllers/auth/LoginController.js"></script>
+    <script src="app/controllers/home/HomeController.js"></script>
+    <script src="app/controllers/requestsample/RSController.js"></script>
+    <script src="app/controllers/requestsample/addrsController.js"></script>
+    <script src="app/controllers/user/userController.js"></script>
+
+    <script src="app/controllers/complaint/comdomesticController.js"></script>
+    <script src="app/controllers/complaint/addcomdomesticController.js"></script>
+    <script src="app/controllers/complaint/comdomesticDetailsController.js"></script>
+    <script src="app/controllers/complaint/comexportDetailsController.js"></script>
+    <script src="app/controllers/complaint/comexportController.js"></script>
+    <script src="app/controllers/complaint/addexportController.js"></script>
+    <script src="app/controllers/complaint/commentdomesticController.js"></script>
+    <script src="app/controllers/complaint/printvwformaController.js"></script>
+    <script src="app/controllers/complaint/formapprovalController.js"></script>
+    <script src="app/controllers/complaint/editcomdomController.js"></script>
+
+    <script src="app/controllers/mdata/mdcomdomController.js"></script>
+    <script src="app/controllers/mdata/mdcomexpController.js"></script>
+    <script src="app/controllers/mdata/mdcomctsController.js"></script>
+    <script src="app/controllers/mdata/mdcomdomdtlController.js"></script>
+    
+    <script src="app/controllers/reports/comdmonthlyController.js"></script>
+    <script src="app/controllers/reports/sumcorprevController.js"></script>
+    <script src="app/controllers/reports/compsumdeptController.js"></script>
+    <script src="app/controllers/reports/expcompmonthController.js"></script>
+    <!-- end inject controller -->
+
+
+    <!-- inject:partials -->
+    <!-- angular templates will be automatically converted in js and inserted here -->
+    <!-- endinject -->
+    <!-- endbuild -->
+<!-- <script type="text/javascript" src="bower_components/jspdf.min.js"></script>
+<script type="text/javascript" src="bower_components/html2canvas.min.js"></script>
+<script type="text/javascript" src="bower_components/jquery-1.11.1.min.js"></script> -->
+  </body>
+</html>
